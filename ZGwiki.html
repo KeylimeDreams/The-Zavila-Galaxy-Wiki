@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>The Zavila Galaxy Official Wiki</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at top, #3bffb5 0, #05000a 45%, #12001f 100%);
+      color: #f5f5ff;
+      font-family: system-ui, sans-serif;
+    }
+    a { color: #b7ffea; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: linear-gradient(90deg, #1a0030, #004422);
+      border-bottom: 3px solid #7b2cff;
+      padding: 18px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .site-title {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #b7ffea;
+      text-shadow: 0 0 10px #00ff99;
+    }
+    nav ul { list-style: none; display: flex; gap: 18px; }
+    nav a {
+      padding: 6px 10px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      transition: 0.2s;
+    }
+    nav a:hover {
+      border-color: #7b2cff;
+      background: rgba(123, 44, 255, 0.25);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto 50px;
+      padding: 20px;
+      background: rgba(5, 0, 15, 0.85);
+      border-radius: 16px;
+      border: 1px solid #3bffb5;
+      box-shadow: 0 0 25px rgba(0, 255, 153, 0.25);
+    }
+    section { margin-bottom: 32px; }
+    section h1, section h2 {
+      color: #b7ffea;
+      margin-bottom: 10px;
+    }
+    section p {
+      font-size: 0.95rem;
+      color: #e6ddff;
+      line-height: 1.5;
+      max-width: 900px;
+    }
+
+    .character-grid, .story-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+    .card {
+      background: radial-gradient(circle at top, #2cffaa 0, #12001f 40%, #05000a 100%);
+      border-radius: 14px;
+      border: 1px solid #7b2cff;
+      padding: 14px 14px 16px;
+      position: relative;
+    }
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #e9ddff;
+      margin-bottom: 4px;
+    }
+    .badge {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid #3bffb5;
+      font-size: 0.75rem;
+      color: #b7ffea;
+      background: rgba(0, 255, 153, 0.08);
+    }
+    .card p {
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+    .external-link {
+      display: inline-block;
+      padding: 4px 9px;
+      border-radius: 999px;
+      border: 1px solid rgba(183, 255, 234, 0.4);
+      background: rgba(18, 0, 31, 0.7);
+      font-size: 0.85rem;
+    }
+
+    .timeline-list {
+      margin-top: 12px;
+      padding-left: 18px;
+      border-left: 2px solid #3bffb5;
+    }
+    .timeline-item {
+      margin-bottom: 10px;
+      padding-left: 10px;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -12px;
+      top: 4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #7b2cff;
+      box-shadow: 0 0 6px #7b2cff;
+    }
+    .timeline-title {
+      font-weight: 600;
+      color: #b7ffea;
+      font-size: 0.95rem;
+    }
+    .timeline-item p {
+      font-size: 0.88rem;
+      color: #e6ddff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 18px 10px 30px;
+      font-size: 0.8rem;
+      color: #c9b6ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-title">The Zavila Galaxy Official Wiki</div>
+    <nav>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#context">Galaxy Context</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#stories">Stories</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+      <h1>Welcome to The Zavila Galaxy Official Wiki</h1>
+      <p>
+        A green and purple archive for the characters, stories, and events of The Zavila Galaxy—
+        an expanded universe born from the Rise of Super mythos and pushed into full galactic scale.
+      </p>
+    </section>
+
+    <!-- CONTEXT -->
+    <section id="context">
+      <h2>What Is The Zavila Galaxy?</h2>
+      <p>
+        The Zavila Galaxy is the primary setting for a Roblox RP universe that extends the original
+        Rise of Super storyline into a vast cosmic frontier. Old faces return, new factions rise,
+        and entire star systems become battlegrounds for power, legacy, and survival.
+      </p>
+      <p>
+        This page acts as a compact hub: quick character references, key stories, and a rough
+        timeline of major events so far.
+      </p>
+    </section>
+
+    <!-- CHARACTERS -->
+    <section id="characters">
+      <h2>Featured Characters</h2>
+      <p>Core figures whose actions shape the fate of the Zavila Galaxy.</p>
+
+      <div class="character-grid">
+
+        <!-- KOLE ROGUE -->
+        <div class="card">
+          <div class="card-title">Kole Rogue</div>
+          <span class="badge">The Guardians</span>
+          <p>
+            Known as <strong>The Arsonist</strong>, Kole is an unstable early clone of Seron “Super” Darkness.
+            His body channels raw thermal energy, and his volatile temperament makes him one of the most
+            destructive Seron-type clones in existence.
+          </p>
+          <a class="external-link" href="https://the-zavila-galaxy.fandom.com/wiki/Kole_Rogue" target="_blank">
+            Full Kole Rogue article →
+          </a>
+        </div>
+
+        <!-- MICHAEL ROGUE -->
+        <div class="card">
+          <div class="card-title">Michael Rogue</div>
+          <span class="badge">The Guardians</span>
+          <p>
+            A stable, compassionate Seron-type clone who wields a stolen temporal pocket watch and a
+            harmonic guitar axe. Michael’s emotional clarity and time-based abilities make him a rare
+            stabilizing force among the clones.
+          </p>
+          <a class="external-link" href="https://the-zavila-galaxy.fandom.com/wiki/Michael_Rogue" target="_blank">
+            Full Michael Rogue article →
+          </a>
+        </div>
+
+        <!-- SERON “SUPER” DARKNESS -->
+        <div class="card">
+          <div class="card-title">Seron “Super” Darkness</div>
+          <span class="badge">The Guardians</span>
+          <p>
+            The primordial architect of the universe. Once human, Seron ascended inside a collapsing
+            Dark Star and became a cosmic creator whose will shapes galaxies, laws, and existence itself.
+          </p>
+          <a class="external-link" href="https://the-zavila-galaxy.fandom.com/wiki/Seron_%22Super%22_Darkness" target="_blank">
+            Full Seron “Super” Darkness article →
+          </a>
+        </div>
+
+        <!-- TOM LETANIO -->
+        <div class="card">
+          <div class="card-title">Tom Letanio</div>
+          <span class="badge">The Guardians</span>
+          <p>
+            A disciplined Stand User who commands <strong>Indigo Fist</strong>—a Stand capable of infinite
+            time stop—and the celestial <strong>Blue Phoenix</strong>. A survivor of the Angelic Purges,
+            Tom dedicates his life to protecting others.
+          </p>
+          <a class="external-link" href="https://the-zavila-galaxy.fandom.com/wiki/Tom_Letanio" target="_blank">
+            Full Tom Letanio article →
+          </a>
+        </div>
+
+        <!-- ANDREW OVERDARK -->
+        <div class="card">
+          <div class="card-title">Andrew OverDark</div>
+          <span class="badge">The Guardians</span>
+          <p>
+            Known as <strong>Black Rose</strong>, Andrew is a grief-forged temporal deity who annihilated
+            the angelic host after the death of his wife. A catastrophic force defined by sorrow rather
+            than ambition.
+          </p>
+          <a class="external-link" href="https://the-zavila-galaxy.fandom.com/wiki/Andrew_OverDark" target="_blank">
+            Full Andrew OverDark article →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- STORIES -->
+    <section id="stories">
+      <h2>Official Stories</h2>
+      <p>
+        These stories mark major turning points in the Zavila Galaxy narrative. Each one focuses on
+        a specific clash, mystery, or catastrophe that pushes the universe forward.
+      </p>
+
+      <div class="story-grid">
+        <div class="card">
+          <div class="card-title">Pierce Vs Crimson</div>
+          <span class="badge">Clash of Powers</span>
+          <p>
+            A direct confrontation between Pierce and Crimson that exposes deeper tensions, hidden
+            loyalties, and the true cost of power.
+          </p>
+          <a class="external-link" href="https://the-zavila-galaxy.fandom.com/wiki/Pierce_Vs_Crimson" target="_blank">
+            Read on the official story page →
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">The Fate Of Dark Phantom</div>
+          <span class="badge">Legacy & Consequence</span>
+          <p>
+            The story that decides what becomes of Dark Phantom—whether they remain a threat,
+            a warning, or something entirely new.
+          </p>
+          <a class="external-link" href="https://the-zavila-galaxy.fandom.com/wiki/The_Fate_Of_Dark_Phantom" target="_blank">
+            Read on the official story page →
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">The Kacia Desert Vexx Empire Investigation</div>
+          <span class="badge">Field Operation</span>
+          <p>
+            An investigation in the Kacia Desert that uncovers Vexx Empire activity, buried secrets,
+            and hints of a larger imperial agenda.
+          </p>
+          <a class="external-link" href="https://the-zavila-galaxy.fandom.com/wiki/The_Kacia_Desert_Vexx_Empire_Investigation" target="_blank">
+            Read on the official story page →
+          </a>
+        </div>
+
+        <div class="card">
+          <div class="card-title">The Zavara Starline Crash Site</div>
+          <span class="badge">Disaster Site</span>
+          <p>
+            A catastrophic crash on the Zavara Starline that becomes a focal point for mystery,
+            salvage, and competing interests.
+          </p>
+          <a class="external-link" href="https://the-zavila-galaxy.fandom.com/wiki/The_Zavara_Starline_Crash_Site" target="_blank">
+            Read on the official story page →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline">
+      <h2>Timeline Snapshot</h2>
+      <p>
+        A rough ordering of key events tied to the official stories. You can expand this into a full
+        chronological page later, but this gives a quick sense of progression.
+      </p>
+
+      <div class="timeline-list">
+        <div class="timeline-item">
+          <div class="timeline-title">Early Conflict: Pierce Vs Crimson</div>
+          <p>
+            The rivalry and clash between Pierce and Crimson erupts, setting emotional and political
+            stakes that echo into later arcs.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-title">The Fate Of Dark Phantom</div>
+          <p>
+            Dark Phantom’s path reaches a decisive moment, reshaping how major factions view power,
+            redemption, and annihilation.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-title">The Kacia Desert Vexx Empire Investigation</div>
+          <p>
+            An on-the-ground investigation in the Kacia Desert reveals Vexx Empire movements and
+            hints at a broader imperial strategy.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-title">The Zavara Starline Crash Site</div>
+          <p>
+            A Starline crash becomes a nexus of scavengers, investigators, and hidden agendas,
+            tying together threads from earlier conflicts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    The Zavila Galaxy Official Wiki — green & purple fan layout. Link out to full Fandom pages for full lore.
+  </footer>
+</body>
+</html>

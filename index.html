@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>The Zavila Galaxy Official Wiki</title>
-
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -69,7 +68,7 @@
       max-width: 900px;
     }
 
-    .character-grid, .story-grid {
+    .character-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 18px;
@@ -125,6 +124,18 @@
       box-shadow: 0 0 6px #7b2cff;
     }
 
+    .timeline-title {
+      font-weight: 600;
+      color: #b7ffea;
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .timeline-item p {
+      font-size: 0.88rem;
+      color: #e6ddff;
+    }
+
     footer {
       text-align: center;
       padding: 18px 10px 30px;
@@ -135,8 +146,6 @@
 </head>
 
 <body>
-
-  <!-- HEADER -->
   <header>
     <div class="site-title">The Zavila Galaxy Official Wiki</div>
     <nav>
@@ -144,14 +153,12 @@
         <li><a href="#overview">Overview</a></li>
         <li><a href="#context">Galaxy Context</a></li>
         <li><a href="#characters">Characters</a></li>
-        <li><a href="#stories">Stories</a></li>
         <li><a href="#timeline">Timeline</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-
     <!-- OVERVIEW -->
     <section id="overview">
       <h1>Welcome to The Zavila Galaxy Official Wiki</h1>
@@ -180,29 +187,106 @@
       <h2>Featured Characters</h2>
       <p>Core figures whose actions shape the fate of the Zavila Galaxy.</p>
 
-      <!-- GUARDIANS -->
+      <!-- THE GUARDIANS -->
       <h3>The Guardians</h3>
       <div class="character-grid">
 
-        <!-- Existing Guardians -->
-        <div class="card"><div class="card-title">Kole Rogue</div><span class="badge">The Guardians</span><p>The Arsonist, an unstable Seron-type clone who channels destructive thermal energy.</p></div>
-        <div class="card"><div class="card-title">Michael Rogue</div><span class="badge">The Guardians</span><p>A compassionate Seron-type clone wielding temporal tools and harmonic weaponry.</p></div>
-        <div class="card"><div class="card-title">Seron “Super” Darkness</div><span class="badge">The Guardians</span><p>The cosmic architect of the universe, ascended from a collapsing Dark Star.</p></div>
-        <div class="card"><div class="card-title">Tom Letanio</div><span class="badge">The Guardians</span><p>Stand User of Indigo Fist and Blue Phoenix, capable of infinite time stop.</p></div>
-        <div class="card"><div class="card-title">Andrew OverDark</div><span class="badge">The Guardians</span><p>Black Rose, a grief-forged temporal deity who destroyed the angelic host.</p></div>
-        <div class="card"><div class="card-title">Sinx Shinirin</div><span class="badge">The Guardians</span><p>The Demonic Presence, a Vergil-like swordsman with razor-sharp demonic energy.</p></div>
-        <div class="card"><div class="card-title">Crox Shinirin</div><span class="badge">The Guardians</span><p>The Demonic Brute, a calm titan who becomes a monstrous force in battle.</p></div>
-        <div class="card"><div class="card-title">HawkBat Rogue</div><span class="badge">The Guardians</span><p>The Scarlet Elemental, a crimson-winged aerial Rogue with explosive mobility.</p></div>
-        <div class="card"><div class="card-title">Mason “Killer” Darkness</div><span class="badge">The Guardians (Xanian)</span><p>A brutal Xanian warrior with void-charged regeneration and dark-matter strikes.</p></div>
-        <div class="card"><div class="card-title">Ral Awakening</div><span class="badge">The Guardians</span><p>The Crimson Fear, whose aura induces panic and hallucinations in enemies.</p></div>
-        <div class="card"><div class="card-title">Jordaan Houston</div><span class="badge">The Guardians</span><p>The Solar Vanguard, a frontline fighter who channels concentrated solar plasma.</p></div>
+        <div class="card">
+          <div class="card-title">Kole Rogue</div>
+          <span class="badge">The Guardians</span>
+          <p>The Arsonist, an unstable Seron-type clone who channels destructive thermal energy.</p>
+        </div>
 
-        <!-- NEW Guardians -->
-        <div class="card"><div class="card-title">Lando Someri</div><span class="badge">The Guardians</span><p>Stand User of Violet Bruiser, capable of slowing time and disrupting momentum.</p></div>
-        <div class="card"><div class="card-title">Keith Mystery</div><span class="badge">The Guardians</span><p>A mysterious combatant whose unstable energy form shifts between phases.</p></div>
-        <div class="card"><div class="card-title">Kauko Roni Kulmala</div><span class="badge">The Guardians</span><p>A frost‑born warrior wielding cryokinetic force and glacial reinforcement.</p></div>
-        <div class="card"><div class="card-title">Angelis “Shifter” Darkness</div><span class="badge">The Guardians</span><p>A Darkness‑line hybrid who manipulates form, density, and combat states.</p></div>
-        <div class="card"><div class="card-title">Arsenio Beau Innes</div><span class="badge">The Guardians</span><p>A radiant fighter whose light‑charged strikes burn through corrupted entities.</p></div>
+        <div class="card">
+          <div class="card-title">Michael Rogue</div>
+          <span class="badge">The Guardians</span>
+          <p>A compassionate Seron-type clone wielding temporal tools and harmonic weaponry.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Seron “Super” Darkness</div>
+          <span class="badge">The Guardians</span>
+          <p>The cosmic architect of the universe, ascended from a collapsing Dark Star.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Tom Letanio</div>
+          <span class="badge">The Guardians</span>
+          <p>Stand User of Indigo Fist and Blue Phoenix, capable of infinite time stop.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Andrew OverDark</div>
+          <span class="badge">The Guardians</span>
+          <p>Black Rose, a grief-forged temporal deity who destroyed the angelic host.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Sinx Shinirin</div>
+          <span class="badge">The Guardians</span>
+          <p>The Demonic Presence, a Vergil-like swordsman with razor-sharp demonic energy.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Crox Shinirin</div>
+          <span class="badge">The Guardians</span>
+          <p>The Demonic Brute, a calm titan who becomes a monstrous force in battle.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">HawkBat Rogue</div>
+          <span class="badge">The Guardians</span>
+          <p>The Scarlet Elemental, a crimson-winged aerial Rogue with explosive mobility.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Mason “Killer” Darkness</div>
+          <span class="badge">The Guardians (Xanian)</span>
+          <p>A brutal Xanian warrior with void-charged regeneration and dark-matter strikes.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Ral Awakening</div>
+          <span class="badge">The Guardians</span>
+          <p>The Crimson Fear, whose aura induces panic and hallucinations in enemies.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Jordaan Houston</div>
+          <span class="badge">The Guardians</span>
+          <p>The Solar Vanguard, a frontline fighter who channels concentrated solar plasma.</p>
+        </div>
+
+        <!-- NEW GUARDIANS -->
+        <div class="card">
+          <div class="card-title">Lando Someri</div>
+          <span class="badge">The Guardians</span>
+          <p>Stand User of Violet Bruiser, capable of slowing time and disrupting momentum.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Keith Mystery</div>
+          <span class="badge">The Guardians</span>
+          <p>A mysterious combatant whose unstable energy form shifts between phases.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Kauko Roni Kulmala</div>
+          <span class="badge">The Guardians</span>
+          <p>A frost‑born warrior wielding cryokinetic force and glacial reinforcement.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Angelis “Shifter” Darkness</div>
+          <span class="badge">The Guardians</span>
+          <p>A Darkness‑line hybrid who manipulates form, density, and combat states.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Arsenio Beau Innes</div>
+          <span class="badge">The Guardians</span>
+          <p>A radiant fighter whose light‑charged strikes burn through corrupted entities.</p>
+        </div>
 
       </div>
 
@@ -210,59 +294,155 @@
       <h3>Team Crusader (Guardian Sub‑Unit)</h3>
       <div class="character-grid">
 
-        <div class="card"><div class="card-title">Royal Demetrios</div><span class="badge">Team Crusader</span><p>The Second Time Breaker God, a temporal strategist with divine precision.</p></div>
-        <div class="card"><div class="card-title">Peter Hydros</div><span class="badge">Team Crusader</span><p>Electro Boy, a plasma manipulator who disables tech and stuns high-speed threats.</p></div>
-        <div class="card"><div class="card-title">Esteban Maverick</div><span class="badge">Team Crusader</span><p>The Beach City Gunslinger, a stylish dual‑pistol marksman with lethal accuracy.</p></div>
-        <div class="card"><div class="card-title">Frasier Falkor</div><span class="badge">Team Crusader</span><p>The Desert Crusader, a sand‑forged warrior who reshapes terrain in battle.</p></div>
+        <div class="card">
+          <div class="card-title">Royal Demetrios</div>
+          <span class="badge">Team Crusader</span>
+          <p>The Second Time Breaker God, a temporal strategist with divine precision.</p>
+        </div>
 
-        <!-- NEW Crusader -->
-        <div class="card"><div class="card-title">Nathan Ice</div><span class="badge">Team Crusader</span><p>A cryo‑enhanced fighter who manipulates sub‑zero fields and frozen constructs.</p></div>
+        <div class="card">
+          <div class="card-title">Peter Hydros</div>
+          <span class="badge">Team Crusader</span>
+          <p>Electro Boy, a plasma manipulator who disables tech and stuns high-speed threats.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Esteban Maverick</div>
+          <span class="badge">Team Crusader</span>
+          <p>The Beach City Gunslinger, a stylish dual‑pistol marksman with lethal accuracy.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Frasier Falkor</div>
+          <span class="badge">Team Crusader</span>
+          <p>The Desert Crusader, a sand‑forged warrior who reshapes terrain in battle.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Nathan Ice</div>
+          <span class="badge">Team Crusader</span>
+          <p>A cryo‑enhanced fighter who manipulates sub‑zero fields and frozen constructs.</p>
+        </div>
 
       </div>
 
       <!-- NOVA WATCH -->
       <h3>Nova Watch</h3>
       <div class="character-grid">
-        <div class="card"><div class="card-title">Aurelius Vantros</div><span class="badge">Nova Watch</span><p>The Celestial Regulator, enforcing cosmic law with binding light constructs.</p></div>
-        <div class="card"><div class="card-title">Issac Bertram</div><span class="badge">Nova Watch</span><p>A stellar tactician who manipulates ionized star currents for precision strikes.</p></div>
+
+        <div class="card">
+          <div class="card-title">Aurelius Vantros</div>
+          <span class="badge">Nova Watch</span>
+          <p>The Celestial Regulator, enforcing cosmic law with binding light constructs.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Issac Bertram</div>
+          <span class="badge">Nova Watch</span>
+          <p>A stellar tactician who manipulates ionized star currents for precision strikes.</p>
+        </div>
+
       </div>
 
       <!-- DEFENDERS -->
       <h3>The Defenders</h3>
       <div class="character-grid">
-        <div class="card"><div class="card-title">Kaela Thornwright</div><span class="badge">The Defenders</span><p>The Bastion Huntress, crafting hard‑light fortresses and redirecting enemy fire.</p></div>
-        <div class="card"><div class="card-title">Dorian Halvost</div><span class="badge">The Defenders</span><p>The Rift Ranger, a spatial archer who blinks through micro‑portals.</p></div>
-        <div class="card"><div class="card-title">Gillis Thorburn</div><span class="badge">The Defenders</span><p>A kinetic bulwark who absorbs force and releases it as seismic counterblows.</p></div>
+
+        <div class="card">
+          <div class="card-title">Kaela Thornwright</div>
+          <span class="badge">The Defenders</span>
+          <p>The Bastion Huntress, crafting hard‑light fortresses and redirecting enemy fire.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Dorian Halvost</div>
+          <span class="badge">The Defenders</span>
+          <p>The Rift Ranger, a spatial archer who blinks through micro‑portals.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-title">Gillis Thorburn</div>
+          <span class="badge">The Defenders</span>
+          <p>A kinetic bulwark who absorbs force and releases it as seismic counterblows.</p>
+        </div>
+
       </div>
 
       <!-- VOID LEGION -->
       <h3>The Void Legion</h3>
       <div class="character-grid">
-        <div class="card"><div class="card-title">Colsen Thane</div><span class="badge">The Void Legion</span><p>A void‑touched warlord who commands entropy fields and collapsing‑star weaponry.</p></div>
-      </div>
 
+        <div class="card">
+          <div class="card-title">Colsen Thane</div>
+          <span class="badge">The Void Legion</span>
+          <p>A void‑touched warlord who commands entropy fields and collapsing‑star weaponry.</p>
+        </div>
+
+      </div>
     </section>
 
     <!-- TIMELINE -->
     <section id="timeline">
       <h2>Timeline Snapshot</h2>
-      <p>A rough ordering of key events tied to the official stories.</p>
+      <p>
+        A rough ordering of key events tied to the official stories. You can expand this into a full
+        chronological page later, but this gives a quick sense of progression.
+      </p>
 
       <div class="timeline-list">
-        <div class="timeline-item"><div class="timeline-title">Early Conflict: Pierce Vs Crimson</div><p>The rivalry and clash between Pierce and Crimson erupts, setting emotional and political stakes.</p></div>
-        <div class="timeline-item"><div class="timeline-title">The Fate Of Dark Phantom</div><p>Dark Phantom’s path reaches a decisive moment, reshaping how factions view power and redemption.</p></div>
-        <div class="timeline-item"><div class="timeline-title">The Kacia Desert Vexx Empire Investigation</div><p>An investigation reveals Vexx Empire movements and hints at a broader imperial strategy.</p></div>
-        <div class="timeline-item"><div class="timeline-title">The Zavara Starline Crash Site</div><p>A Starline crash becomes a nexus of scavengers, investigators, and hidden agendas.</p></div>
-        <div class="timeline-item"><div class="timeline-title">The Takeover of Zavara</div><p>The Universal Starline’s takeover forces the Guardians into large-scale imperial warfare.</p></div>
-        <div class="timeline-item"><div class="timeline-title">The Rise of Babylon</div><p>Babylon’s emergence as the False Creator challenges the foundations of creation itself.</p></div>
+        <div class="timeline-item">
+          <div class="timeline-title">Early Conflict: Pierce Vs Crimson</div>
+          <p>
+            The rivalry and clash between Pierce and Crimson erupts, setting emotional and political
+            stakes that echo into later arcs.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-title">The Fate Of Dark Phantom</div>
+          <p>
+            Dark Phantom’s path reaches a decisive moment, reshaping how major factions view power,
+            redemption, and annihilation.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-title">The Kacia Desert Vexx Empire Investigation</div>
+          <p>
+            An on-the-ground investigation in the Kacia Desert reveals Vexx Empire movements and
+            hints at a broader imperial strategy.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-title">The Zavara Starline Crash Site</div>
+          <p>
+            A Starline crash becomes a nexus of scavengers, investigators, and hidden agendas,
+            tying together threads from earlier conflicts.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-title">The Takeover of Zavara</div>
+          <p>
+            The Universal Starline’s takeover of Zavara marks a turning point in the early Guardian era,
+            forcing the Guardians to confront large-scale imperial warfare.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-title">The Rise of Babylon</div>
+          <p>
+            Babylon’s emergence as the False Creator introduces a new cosmic threat, challenging the
+            very foundations of creation and the authority of Seron.
+          </p>
+        </div>
       </div>
     </section>
-
   </main>
 
   <footer>
-    The Zavila Galaxy Official Wiki — green & purple fan layout. Link out to full Fandom pages for full lore.
+    The Zavila Galaxy Official Wiki — green &amp; purple fan layout. Link out to full Fandom pages for full lore.
   </footer>
-
 </body>
 </html>
